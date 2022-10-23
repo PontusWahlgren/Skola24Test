@@ -1,0 +1,146 @@
+body {
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+}
+
+.container
+{
+    display: block;
+    width: 100%;
+}
+
+.row
+{
+    display: block;
+    width: 100%;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12
+{
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.col-1
+{
+    width: 8.33%;
+}
+
+.col-2
+{
+    width: 16.66%;
+}
+
+.col-3
+{
+    width: 25%;
+}
+
+.col-4
+{
+    width: 33.33%;
+}
+
+.col-5
+{
+    width: 41.66%;
+}
+
+.col-6
+{
+    width: 50%;
+}
+
+.col-7
+{
+    width: 58.33%;
+}
+
+.col-8
+{
+    width: 66.66%;
+}
+
+.col-9
+{
+    width: 75%;
+}
+
+.col-10
+{
+    width: 83.33%;
+}
+
+.col-11
+{
+    width: 91.66%;
+}
+
+.col-12
+{
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, h7
+{
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+#absences-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 22px;
+}
+
+@media all and (max-width: 998px) {
+    #absences-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 100%;
+    }
+}
+
+.card {
+    height: 150px;
+    /*margin: 0 22px;*/
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 30%);
+    transition: 0.3s;
+    text-align: left;
+}
+
+.card .content {
+    padding: 2px 16px;
+}
+
+.plus-sign {
+    font-size: 125px;
+    height: 100%;
+    text-align: center;
+}
+
+.card:hover, 
+.card:active, 
+.card:focus {
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 30%);
+}
+
+.card .plus-sign:hover, 
+.card .plus-sign:active, 
+.card .plus-sign:focus {
+    cursor: pointer;
+}
+
+.card .card-name {
+    text-align: left;
+    font-size: 1.17em;
+    margin: 1em 0;
+}
